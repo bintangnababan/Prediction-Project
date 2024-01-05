@@ -1,30 +1,30 @@
-# PROBLEM STATEMENT
-Kekhawatiran adanya keterlambatan pembayaran kartu kredit pada FinanKu yang akan merugikan bisnis. Sehingga orang-orang yang memiliki potensi untuk mengalami keterlambatan bayar bisa diprediksi lebih cepat untuk menentukan strategi yang sesuai dalam menghadapi kondisi di masa mendatang.
+## Project Description
+We express concerns regarding the potential delay in credit card payments at FinanKu, which could adversely affect our business. To address this situation, we aim to build a predictive model capable of accurately predicting at least 60% of customers who are likely to experience credit card payment delays.
 
-# OBJECTIVE
-Membuat sebuah model yang dapat memprediksi setidaknya 60% dari pelanggan yang akan mengalami telat bayar kartu kredit [Accuracy & Recall di atas 60%]
+## Available Variables
+- **Customer ID:** Unique customer identifier
+- **Branch:** Customer's branch location
+- **City:** Customer's city location
+- **Age:** Customer's age during the observation period
+- **Avg. Annual Income/Month:** Average customer income per year
+- **Balance (Q1-Q4):** End-of-quarter balance for customers
+- **Num of Products (Q1-Q4):** Number of products owned by the customer at the end of each quarter
+- **HasCrCard (Q1-Q4):** Status of the customer's credit card ownership at the end of each quarter
+- **Active Member (Q1-Q4):** Customer's active status
+- **Unpaid Tagging:** Customer's failure-to-pay status
 
-# VARIABEL YANG TERSEDIA
-Dari dataset yang dimiliki terdapat beberapa data yang tersedia:
----
-**1. Customer ID:** Unique ID Customer\
-**2. Branch:** Lokasi Cabang Nasabah Terdaftar\
-**3. City:** Lokasi Kota Nasabah Terdaftar\
-**4. Age:** Umur Nasabah Pada Periode Observasi\
-**5. Avg. Annual Income/Month:** Rata-rata penghasilan nasabah dalam satu tahun\
-**6. Balance (Q1-Q4):** Saldo mengendap yang dimiliki nasabah di akhir kuartal\
-**7. Num of Products (Q1-Q4):** Jumlah kepemilikan produk nasabah di akhir kuartal\
-**8. HasCrCard (Q1-Q4):** Status kepemilikan produk kartu kredit nasabah di akhir kuartal\
-**9. Active Member (Q1-Q4):** Status keaktifan nasabah\
-**10. Unpaid Tagging:** Status nasabah gagal bayar
+## Experiments
+- Review period: Customers are reviewed over the past year or the last 6 months.
+- Variable adjustments: Include balance from the average during the time horizon and changes at the end and beginning of the review, number of products from the average, maximum, and minimum during the review period, and customer activity status in months.
 
-#EXPERIMENT
-Periode Tinjauan:
-1. Nasabah direview selama satu tahun terakhir
-2. Nasabah direview selama 6 bulan terakhir
+## Objectives
+Develop a predictive model with a minimum accuracy and recall rate of 60% to identify customers likely to experience credit card payment delays.
 
-Penyesuaian Variabel:
-1. Balance dilihat dari rata-rata selama horizon waktu & dilihat perubahan pada akhir tinjauan dan awal tinjauan
-2. Melihat kepemilikan jumlah produk dari rata-rata, maksimum, dan minimum pada periode tinjauan
-3. Status keaktifan nasabah dilihat dalam bentuk bulan
+## Usage Instructions
+1. Clone this repository.
+2. Ensure you have all the required dependencies.
+3. Run the notebook or script to view results and predictions.
+4. Adjust parameters as needed.
 
+## Notes
+Be sure to read the documentation and references included in the notebook or script for better understanding. Feel free to provide feedback or report any issues you may encounter. Thank you for your participation!
